@@ -1,0 +1,8 @@
+const Tarea = require('./models/tarea');
+const Tareas = require('./models/tareas');
+
+const tareas = new Tareas();
+const tarea = new Tarea('comprar comida');
+        
+tareas._listado[tareas.id] = tarea;
+console.log(tareas);
